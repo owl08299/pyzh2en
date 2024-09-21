@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pyzh2en"
+authors = [{name = "owl08299", email = "owl0829@icloud.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "requests",
+    "pyquery",
+    "fire",
+    "unicodedata",
+]
+
+[project.urls]
+Home = "https://github.com/owl08299/pyzh2en"
+
+[project.scripts]
+boca = "pyzh2en.__main__:main"
